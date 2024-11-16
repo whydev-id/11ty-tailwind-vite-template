@@ -1,0 +1,28 @@
+# Ignore node_modules
+node_modules
+ 
+# Ignore build output
+dist
+ 
+# Ignore some configurations
+.env
+.gitignore
+.prettierignore
+.browserslistrc
+ 
+# Ignore vendor files
+public/css
+public/font
+public/fonts
+public/js
+
+# Ignore format
+*.snap
+ 
+# Ignore images
+*.gif
+*.jpeg
+*.jpg
+*.png
+*.svg
+*.ico
