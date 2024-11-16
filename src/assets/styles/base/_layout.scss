@@ -1,0 +1,65 @@
+::selection {
+	background-color: var(--color-text);
+	color: var(--color-background);
+}
+
+body {
+	font-family: system-ui;
+	@apply font-martel text-base;
+	text-rendering: optimizeLegibility;
+	transition: background-color 0.3s;
+	background-color: var(--color-background);
+	color: var(--color-text);
+}
+
+article {
+	margin: 0 0 20px;
+}
+
+// layout
+.ws {
+	&-main {
+		@apply flex items-center;
+		margin: 40px 0;
+		min-height: calc(100vh - 462px);
+	}
+
+	&-container {
+		max-width: 1200px;
+		margin: 0 auto;
+		width: 90%;
+	}
+
+	&-error {
+		&-image {
+			max-width: 400px;
+			margin: 0 auto 40px;
+		}
+	}
+}
+
+.ws-content {
+	&-head {
+		&-icon {
+			width: 100%;
+			height: 250px;
+			margin: 0 0 30px;
+		}
+	}
+
+	&-body {
+		margin: 20px 0;
+	}
+}
+
+@include media-breakpoint("medium") {
+	.ws-main {
+		min-height: calc(100vh - 310px);
+	}
+
+	.ws-content {
+		&-body {
+			margin: 40px 0 20px;
+		}
+	}
+}

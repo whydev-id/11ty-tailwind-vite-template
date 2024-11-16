@@ -1,0 +1,23 @@
+@layer base {
+	:root {
+		--color-background: #ffffff;
+		--color-text: #2f4858;
+		--color-link: #db001e;
+		--color-link-hover: #fb2836;
+		--color-border: #efefef;
+		--color-moon: #2f4858;
+		--color-button: #db001e;
+		--color-inactive: #782b7a;
+	}
+
+	[data-theme="dark"] {
+		--color-background: #222831;
+		--color-text: #eeeeee;
+		--color-link: #db001e;
+		--color-link-hover: #f96c67;
+		--color-border: #393e46;
+		--color-moon: #ffb400;
+		--color-button: #ffb400;
+		--color-inactive: #f679f9;
+	}
+}
