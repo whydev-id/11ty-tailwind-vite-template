@@ -1,0 +1,6 @@
+{
+	"layout": "draft",
+	"eleventyExcludeFromCollections": true,
+	"draft": true,
+	"permalink": "draft/{{ page.fileSlug }}/index.html"
+}

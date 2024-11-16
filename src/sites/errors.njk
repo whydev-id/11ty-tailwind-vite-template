@@ -1,0 +1,26 @@
+---
+layout: base.njk
+metaIndex: noindex,nofollow
+pagination:
+    data: errorPages
+    alias: error
+    size: 1
+permalink: "/{{error.code}}.html"
+eleventyExcludeFromCollections: true
+---
+
+<div class="ws-content">
+	<div class="ws-content-head text-center">
+		<div class="ws-error">
+			<div class="ws-error-image">{% include "../_includes/_svg/sad.njk" %}</div>
+
+			<h1>{{ error.title }}</h1>
+			<p>
+				Whopps... {{ error.desc }}
+				{% if error.redirectLink %}
+				<a href="{{ error.redirectLink | url }}">{{ error.redirectTitle }}</a>
+				{% endif %}
+			</p>
+		</div>
+	</div>
+</div>

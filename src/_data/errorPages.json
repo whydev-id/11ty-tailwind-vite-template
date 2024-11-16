@@ -1,0 +1,30 @@
+[
+	{
+		"code": "400",
+		"title": "400 Bad Request",
+		"desc": "You may have typed the URL incorrectly or you came from an outdated link.",
+		"redirectLink": "/",
+		"redirectTitle": "Go to homepage"
+	},
+	{
+		"code": "401",
+		"title": "401 Unauthorised",
+		"desc": "We're sorry. You're unauthorised to this page.",
+		"redirectLink": "/",
+		"redirectTitle": "Go to homepage"
+	},
+	{
+		"code": "403",
+		"title": "403 Access Denied",
+		"desc": "You don't have sufficient administrative permission to view this page.",
+		"redirectLink": "/",
+		"redirectTitle": "Go to homepage"
+	},
+	{
+		"code": "404",
+		"title": "404 Not Found",
+		"desc": "Sorry, the page you are looking for doesn’t exist.",
+		"redirectLink": "/",
+		"redirectTitle": "Go to homepage"
+	}
+]

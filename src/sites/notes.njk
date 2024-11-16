@@ -1,0 +1,35 @@
+---
+layout: base.njk
+title: My notes
+permalink: /notes/index.html
+---
+
+<div class="ws-content">
+	<div class="ws-content-head">
+		<h1>Dummy Notes</h1>
+		<p>
+			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam esse ut minus animi
+			magnam vel enim numquam, placeat necessitatibus magni facere corrupti? Aliquid dolor est
+			hic? Maxime voluptates accusantium reiciendis!
+		</p>
+	</div>
+
+	<div class="ws-content-body">
+		<ul class="ws-post">
+			{% for post in collections.notes | reverse -%}
+			<li class="ws-post-item">
+				<time
+					class="ws-post-date"
+					datetime="{{ post.date | convertDate('DD-MM-YYYY, h:mm:ss') }}"
+					>{{ post.date | convertDate('DD MMMM YYYY') }}</time
+				>
+				<h2 class="ws-post-title">
+					<a class="ws-post-link" href="{{ post.data.page.url }}">{{
+						post.data.title
+					}}</a>
+				</h2>
+			</li>
+			{%- endfor %}
+		</ul>
+	</div>
+</div>

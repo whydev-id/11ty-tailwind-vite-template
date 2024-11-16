@@ -1,0 +1,16 @@
+---
+layout: base.njk
+---
+
+<article class="ws-content">
+	<header class="ws-content-head">
+		<h1>{{ title }} (DRAFT MODE!!)</h1>
+		{% if subtitle %}
+		<p>{{ subtitle }}</p>
+		{% endif %}
+	</header>
+
+	<div class="ws-content-body">
+		{{ content | safe }}
+	</div>
+</article>

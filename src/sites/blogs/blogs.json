@@ -1,0 +1,3 @@
+{
+	"permalink": "blogs/blog/{{ page.fileSlug }}/index.html"
+}
