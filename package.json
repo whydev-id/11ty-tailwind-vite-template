@@ -1,0 +1,58 @@
+{
+	"name": "11ty-tailwind-vite-template",
+	"version": "1.0.0",
+	"description": "11ty template using vite & tailwind",
+	"main": "index.js",
+	"devDependencies": {
+		"@11ty/eleventy": "2.0.1",
+		"@11ty/eleventy-img": "4.0.2",
+		"@11ty/eleventy-plugin-syntaxhighlight": "5.0.0",
+		"@11ty/eleventy-plugin-vite": "4.0.0",
+		"autoprefixer": "10.4.17",
+		"cssnano": "6.0.3",
+		"cssnano-preset-advanced": "6.0.3",
+		"dotenv": "16.4.4",
+		"eslint": "8.56.0",
+		"eslint-config-prettier": "9.1.0",
+		"html-minifier": "4.0.0",
+		"markdown-it": "14.0.0",
+		"markdown-it-eleventy-img": "0.10.1",
+		"minify-xml": "4.4.1",
+		"moment": "2.30.1",
+		"npm-run-all": "4.1.5",
+		"postcss": "8.4.35",
+		"postcss-combine-media-query": "1.0.1",
+		"postcss-import": "16.0.0",
+		"postcss-nesting": "12.0.2",
+		"rimraf": "5.0.5",
+		"sass": "1.70.0",
+		"tailwindcss": "3.4.1",
+		"vite": "5.1.1",
+		"vite-plugin-compression": "0.5.1"
+	},
+	"scripts": {
+		"clear": "rimraf dist",
+		"eleventy:run": "npx eleventy",
+		"eleventy:watch": "npx eleventy --serve",
+		"minifyXML": "npx minify-xml dist/sitemap.xml --in-place",
+		"dev": "npm-run-all clear eleventy:run eleventy:watch",
+		"build": "npm-run-all clear eleventy:run minifyXML"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/whydev-id/11ty-tailwind-vite-template"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/whydev-id/11ty-tailwind-vite-template/issues"
+	},
+	"homepage": "https://github.com/whydev-id/11ty-tailwind-vite-template",
+	"dependencies": {
+		"tua-body-scroll-lock": "1.4.0"
+	},
+	"resolutions": {
+		"sharp": "~0.32.0"
+	}
+}
