@@ -1,0 +1,36 @@
+<footer class="ws-footer" id="footer">
+	<div class="ws-container">
+		<div class="ws-footer-info">
+			<div class="ws-footer-list">
+				<strong class="ws-footer-list-text">{{ author.name }}</strong>
+				<span class="ws-footer-list-text">© Copyright {{ settings.currentYear }}</span>
+			</div>
+
+			<div class="ws-footer-list">
+				<strong class="ws-footer-list-text">Contact</strong>
+
+				{% for i, media in author.social %}
+				<a
+					href="{{ media.url }}"
+					target="blank"
+					class="ws-footer-list-link"
+					rel="noopener noreferrer"
+					>{{ i | capitalize }}</a
+				>
+				<span>/</span>
+				{% endfor %}
+			</div>
+
+			<div class="ws-footer-list">
+				<strong class="ws-footer-list-text">Powered by</strong>
+				<a
+					href="https://www.11ty.io/"
+					target="blank"
+					rel="noopener noreferrer"
+					class="ws-footer-list-link"
+					>11ty</a
+				>
+			</div>
+		</div>
+	</div>
+</footer>

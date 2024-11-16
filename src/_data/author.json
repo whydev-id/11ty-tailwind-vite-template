@@ -1,0 +1,11 @@
+{
+	"name": "John Doe",
+	"shortName": "JohnDoe",
+	"avatar": "/assets/images/logo.png",
+	"social": {
+		"linkedin": {
+			"username": "John Doe",
+			"url": "https://www.linkedin.com/"
+		}
+	}
+}

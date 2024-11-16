@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="robots" content="{% if metaIndex %}{{ metaIndex }}{% else %}index{% endif %}" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>{% if title %}{{ title }} | {% endif %}{{ settings.title }}</title>
+		<link
+			rel="preload"
+			href="{{ '/assets/fonts/Cabin-BoldItalic.woff2' | url }}"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="{{ '/assets/fonts/MartelSans-Regular.woff2' | url }}"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		{% include "_components/meta.njk" %}
+		<link rel="preload" href="{{ '/assets/index.css' | url }}" as="style" />
+		<link rel="stylesheet" href="/assets/styles/main.scss" />
+	</head>
+	<body>
+		<div class="ws-layout">
+			{% include "_components/header.njk" %}
+			<main class="ws-main" id="content">
+				<div class="ws-container">
+					<div class="ws-content">{{ content | safe }}</div>
+				</div>
+			</main>
+			{% include "_components/footer.njk" %}
+		</div>
+	</body>
+	<script type="module" src="{{ '/assets/index.js' | url }}"></script>
+</html>
